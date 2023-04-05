@@ -1,5 +1,5 @@
 const User=require('../Schema/user.model');
-
+const bcrypt=require('bcrypt');
 
 
 async function createUser(req, res) {
@@ -35,7 +35,8 @@ async function loginUser(req, res) {
     // Check if email already exists in database
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      const correctPassword = await User.findOne({ password });
+      // const correctPassword = await User.findOne({ password });
+      const correctPassword = await bcrypt.compare(password, existingUser.password);
       if(correctPassword){
         console.log('Successfully Logged in');
         return res.status(409).send({ message: 'Successfully Logged in' });
