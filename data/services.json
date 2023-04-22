@@ -1,19 +1,7 @@
 [{
-  "name": "Synthetics"
+  "name": "Laundry"
 }, {
-  "name": "Mix"
+  "name": "Dry Cleaning"
 }, {
-  "name": "Allergen"
-}, {
-    "name": "Babycare"
-}, {
-    "name": "Daily"
-}, {
-    "name": "Delicate"
-}, {
-    "name": "Sportwear"
-}, {
-    "name": "Wool"
-}, {
-  "name": "jeans"
-            }]
+  "name": "Iron"
+}]

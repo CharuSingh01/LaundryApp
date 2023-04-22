@@ -1,15 +1,19 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 // Define the item schema
-const serviceSchema = new Schema({
+const slotSchema = new Schema({
   name: {
     type: String,
     required: true,
     unique: true
   },
+  availability: {
+    type:Boolean,
+      required: false,
+  }
   // Add any other properties for your item schema
 });
 
-const Service = mongoose.model('Service', serviceSchema);
+const Slot = mongoose.model('Slot', slotSchema);
 
-module.exports=Service;
+module.exports=Slot;

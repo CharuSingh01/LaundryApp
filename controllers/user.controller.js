@@ -60,26 +60,7 @@ async function loginUser(req, res) {
 }
 
 
-// async function createUser(req,res){
-//   try {
-//     const {name,email,password}=req.body;
-//   //  console.log(req.body);
-//     const newUser=new User({
-//       name:req.body.name,
-//         email:req.body.email,
-//         password:req.body.password
-//       });
-//
-// await newUser.save();
-//
-//
-// res.status(200).send({message:'user created successfully!'});
-//
-//   } catch (e) {
-//     res.status(400).send({error:e});
-//     console.log(e);
-//   }
-// }
+
 
 
 module.exports={createUser,loginUser};

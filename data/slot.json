@@ -1,0 +1,10 @@
+[{
+  "name": "Morning",
+  "availability":true
+}, {
+  "name": "Afternoon",
+  "availability":true
+}, {
+  "name": "Evening",
+  "availability":false
+}]

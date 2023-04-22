@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-// Define the item schema
-const serviceSchema = new Schema({
+
+const materialSchema = new Schema({
   name: {
     type: String,
     required: true,
@@ -10,6 +10,5 @@ const serviceSchema = new Schema({
   // Add any other properties for your item schema
 });
 
-const Service = mongoose.model('Service', serviceSchema);
-
-module.exports=Service;
+const Material=mongoose.model('Material',materialSchema);
+module.exports=Material;

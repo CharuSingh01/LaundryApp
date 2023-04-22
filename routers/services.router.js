@@ -1,8 +1,9 @@
 const serviceRouter=require('express').Router();
-const {chooseItem}=require('../controllers/services.controller');
+const {chooseService,getServiceList}=require('../controllers/services.controller');
 
 
-serviceRouter.post('/chooseType',chooseItem);
+serviceRouter.post('/chooseType',chooseService);
+serviceRouter.get('/getServiceList',getServiceList);
 
 
 module.exports=serviceRouter;
