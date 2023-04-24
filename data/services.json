@@ -1,7 +1,10 @@
 [{
-  "name": "Laundry"
+  "name": "Laundry",
+  "price":10
 }, {
-  "name": "Dry Cleaning"
+  "name": "Dry Cleaning",
+  "price":20
 }, {
-  "name": "Iron"
+  "name": "Iron",
+  "price":30
 }]

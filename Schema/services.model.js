@@ -4,9 +4,12 @@ const { Schema } = mongoose;
 const serviceSchema = new Schema({
   name: {
     type: String,
-    required: true,
+    required: false,
     unique: true
   },
+  price:{
+    type: Number,
+  }
   // Add any other properties for your item schema
 });
 
